@@ -1,0 +1,381 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="#" class="navbar-logo">VP</a>
+        <ul class="navbar-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="navbar-mobile-toggle" aria-label="Toggle menu">
+            <i data-lucide="menu"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-bg">
+        <img src="{{ url_for('static', path='images/hero-bg.jpg') }}" alt="Background">
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text animate-fade-in-up">
+                <h1>Hi, I'm <span>Vishnu Pradeesh N</span></h1>
+                <p class="hero-tagline">Senior Software Engineer</p>
+                <p class="hero-description">
+                    Python Development | Senior SDET | Streamlit | API | FastAPI | NumPy | Pandas | Cloud Network Automation | DevOps | Gen AI <br><br>
+                    2+ Years of Experience in crafting efficient automation solutions for embedded systems and cloud environments, expert in Python and modern frameworks at embedUR Systems, Chennai.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i data-lucide="folder-open"></i>
+                        View Portfolio
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i data-lucide="mail"></i>
+                        Get in Touch
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/vishnupradeesh" target="_blank" aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/vishnu-pradeesh-n-675268202" target="_blank" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="mailto:nvp15a1@gmail.com" aria-label="Email">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image animate-fade-in-up">
+                <div class="profile-image-wrapper">
+                    <img src="{{ url_for('static', path='images/profile.jpg') }}" alt="Vishnu Pradeesh N" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>Results-driven Software Engineer leveraging Python, DevOps, and automation to build scalable microservices, optimize CI/CD pipelines, and drive efficiency across cloud and data-centric systems.</p>
+        </div>
+        <div class="about-grid">
+            <div class="card about-card">
+                <h3><i data-lucide="user"></i> Who I Am</h3>
+                <p>
+                    I'm a <b>Senior Software Engineer</b> specializing in <b>Python automation, micro webservices development, 
+                     </b>and<b> DevOps workflows</b>. With <b>2+ years of industry experience,</b> I design scalable microservices, 
+                    data-driven automation, and CI/CD systems. I'm passionate about Python development, 
+                    data visualization, and cloud-ready automation, and continuously exploring <b>AI/ML, 
+                    Generative AI, </b>and<b> Data Engineering</b> to build future-ready solutions.
+                </p>
+            </div>
+            <div class="card about-card">
+                <h3><i data-lucide="graduation-cap"></i> Education</h3>
+                <p>
+                    <strong>B.E. in Electronics and Communication Engineering</strong> +<strong> IoT (Hons.)</strong><br>
+                    Mepco Schlenk Engineering College (Autonomous), Sivakasi, Tamilnadu<br>
+                    Graduated: 2023<br><br>
+                    My academic foundation in ECE combined with my software engineering expertise 
+                    gives me a unique perspective on <b>Embedded</b>, <b>Data Communication systems</b> and <b>Automation Challenges</b>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section" style="background: var(--secondary);">
+    <div class="container">
+        <div class="section-title">
+            <h2>Work Experience</h2>
+            <p>My professional journey in software engineering and automation</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="card">
+                    <span class="timeline-date">June 2025 - Present</span>
+                    <h3 class="timeline-title">Senior Software Engineer</h3>
+                    <p class="timeline-company">embedUR Systems, Chennai</p>
+                    <ul class="timeline-responsibilities">
+                        <li>Automated over <b>200+ cases</b> in WiFi Alliance Certification using <b>socket coding in python</b></li>
+                        <li>Integrated <b>10+ Features</b> & fixed <b>30+ Autons</b> in Cisco Catalyst Center cloud Automation Test Suites using <b>PyTest & API</b></li>
+                        <li>Built and maintained <b>>CI/CD pipelines using Jenkins for Solution Sanity Regression Pipelines</b></li>
+                        <li>Developed <b>micro webservices using Streamlit</b> for internal tooling and device automation services to eradicate repetitive manual tasks</li>
+                        <li><b>Mentor Junior Engineers</b> and <b>conduct code reviews</b> to maintain code quality standards</li>
+                    </ul>
+                </div>
+
+                <br><br>
+
+                <div class="card">
+                    <span class="timeline-date">June 2023 - June 2025</span>
+                    <h3 class="timeline-title">Software Engineer</h3>
+                    <p class="timeline-company">embedUR Systems, Chennai</p>
+                    <ul class="timeline-responsibilities">
+                        <li>Automated 7+ features in Cisco Cyber Vision Product using <b>Cypress Framework covering 50+ Teryestcases</b></li>
+                        <li>Automated Sanity Testcases covering E2E validation of Cisco Cyber Vision</li>
+                        <li>Automated cross platform integration of Cisco CCV and Cisco ISE <b>covering 20+ testcases</b></li>
+                        <li>Collaborate with cross-functional teams to deliver high-impact automation solutions</li>
+                    </ul>
+                </div>
+
+                <br><br>
+
+                <div class="card">
+                    <span class="timeline-date">January 2023 - June 2023</span>
+                    <h3 class="timeline-title">Project Intern</h3>
+                    <p class="timeline-company">embedUR Systems, Chennai</p>
+                    <ul class="timeline-responsibilities">
+                        <li>Stabilized <b>Concurrent Radio Automation</b> for COS AP platform in cisco</li>
+                        <li>Automated Image deployment in multiple Cisco Controllers using <b>concurrent.futures module</b></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Skills & Expertise</h2>
+            <p>Technologies and tools I work with</p>
+        </div>
+        <div class="skills-grid">
+            <div class="card skill-category">
+                <h3><i data-lucide="code-2"></i> Programming & Frameworks</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">PyTest</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Streamlit</span>
+                    <span class="skill-tag">Subprocess</span>
+                    <span class="skill-tag">concurrent.futures</span>
+                    <span class="skill-tag">Pexpect & Paramiko</span>
+                    <span class="skill-tag">NumPy, Pandas, MatPlotLib</span>
+                    <span class="skill-tag">Cypress</span>
+                    <span class="skill-tag">Groovy</span>
+                </div>
+            </div>
+            <div class="card skill-category">
+                <h3><i data-lucide="wrench"></i> Tools & Platforms</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">PostMan</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Gen AI</span>
+                    <span class="skill-tag">Kubernetes</span>
+                </div>
+            </div>
+            <div class="card skill-category">
+                <h3><i data-lucide="brain"></i> Core Strengths</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Automation Development</span>
+                    <span class="skill-tag">Cloud Automation</span>
+                    <span class="skill-tag">Micro webservices & Solutions</span>
+                    <span class="skill-tag">CI/CD Pipelines</span>
+                    <span class="skill-tag">API Design & Automation</span>
+                    <span class="skill-tag">Problem Solving</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="section" style="background: var(--secondary);">
+    <div class="container">
+        <div class="section-title">
+            <h2>Services</h2>
+            <p>Expertise I bring to every project</p>
+        </div>
+        <div class="services-grid">
+            <div class="card service-card">
+                <div class="service-icon">
+                    <i data-lucide="cpu"></i>
+                </div>
+                <h3>Automation Development</h3>
+                <p>Building robust automation frameworks for embedded systems testing and validation using Python and industry-standard tools.</p>
+            </div>
+            <div class="card service-card">
+                <div class="service-icon">
+                    <i data-lucide="cloud"></i>
+                </div>
+                <h3>Cloud Automation</h3>
+                <p>Designing and implementing scalable cloud automation solutions for infrastructure provisioning and management.</p>
+            </div>
+            <div class="card service-card">
+                <div class="service-icon">
+                    <i data-lucide="code"></i>
+                </div>
+                <h3>API Design & Testing</h3>
+                <p>Creating RESTful APIs with FastAPI and comprehensive testing strategies for reliable backend services.</p>
+            </div>
+            <div class="card service-card">
+                <div class="service-icon">
+                    <i data-lucide="git-branch"></i>
+                </div>
+                <h3>CI/CD Pipeline Setup</h3>
+                <p>Setting up and maintaining continuous integration and deployment pipelines using Jenkins for automated workflows.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Featured Projects</h2>
+            <p>Showcasing my work in AI, IoT, and Automation</p>
+        </div>
+        <div class="projects-grid">
+            <div class="card project-card">
+                <img src="{{ url_for('static', path='images/project-fruit.jpg') }}" alt="Fruit Ripening Monitoring" class="project-image" onerror="this.style.background='linear-gradient(135deg, #06b6d4, #2dd4bf)'; this.style.display='block';">
+                <h3>Fruit Ripening & Monitoring using Computer Based Intelligence & IoT</h3>
+                <p>
+                    The goal of this project is to use ethylene gas to automatically ripen yellow fruits
+                    in a manner similar to how ripening occurs naturally. The Deep Learning algorithm predicts
+                    the fruit phases. The microcontroller used in this project to operate the Deep Learning Model 
+                    and drive the motor sprayer is a single board computer, the Raspberry Pi 4B. IoT facilitates 
+                    the transmission of anticipated data to the cloud, benefiting end users. Additionally, a website 
+                    was created for this project to assist people for tracking the results.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">CNN</span>
+                    <span class="tech-tag">IoT</span>
+                    <span class="tech-tag">Raspberry Pi</span>
+                    <span class="tech-tag">SMTP</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">HTML/CSS</span>
+                </div>
+            </div>
+            <div class="card project-card">
+                <img src="{{ url_for('static', path='images/project-daynight.jpg') }}" alt="Day-Night Classification" class="project-image" onerror="this.style.background='linear-gradient(135deg, #2dd4bf, #06b6d4)'; this.style.display='block';">
+                <h3>Day-Night Image Classification</h3>
+                <p>
+                    A machine learning solution that classifies images as day or night using logistic 
+                    regression. Analyzes histogram features including mean, median, standard deviation, 
+                    and variance for accurate predictions.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">NumPy</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">Logistic Regression</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section" style="background: var(--secondary);">
+    <div class="container">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+            <p>Let's connect and discuss opportunities</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i data-lucide="mail"></i>
+                    </div>
+                    <div>
+                        <strong>Email</strong>
+                        <p>nvp15a1@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i data-lucide="phone"></i>
+                    </div>
+                    <div>
+                        <strong>Phone</strong>
+                        <p>+91 9944095225</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <div>
+                        <strong>Location</strong>
+                        <p>Chennai, Tamil Nadu, India</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i data-lucide="linkedin"></i>
+                    </div>
+                    <div>
+                        <strong>LinkedIn</strong>
+                        <p><a href="https://linkedin.com/in/vishnu-pradeesh-n-675268202" target="_blank">linkedin.com/in/vishnu-pradeesh-n-675268202</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i data-lucide="github"></i>
+                    </div>
+                    <div>
+                        <strong>GitHub</strong>
+                        <p><a href="https://github.com/vishnupradeesh" target="_blank">github.com/vishnupradeesh</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form card">
+                <h3>Send a Message</h3>
+                <form action="/api/contact" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i data-lucide="send"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Vishnu Pradeesh N. All rights reserved. Built with <a href="#">FastAPI</a></p>
+    </div>
+</footer>
+{% endblock %}
