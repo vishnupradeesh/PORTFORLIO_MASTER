@@ -75,7 +75,7 @@ async def submit_contact(
     """)
 
     db.insert_contact(name, email, subject, message)
-    db.fetch_all_contacts()  # Just to demonstrate DB interaction
+    print(db.fetch_all_contacts()) # Just to demonstrate DB interaction
     
     # For now, redirect back to contact section with success message
     # In production, you'd want to add flash messages or return JSON
