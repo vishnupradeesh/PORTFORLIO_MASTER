@@ -15,6 +15,10 @@ from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel, EmailStr
 from typing import Optional
 import os
+from db import BackendDatabase
+
+# Initialize database
+db = BackendDatabase()
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -69,6 +73,9 @@ async def submit_contact(
     Subject: {subject}
     Message: {message}
     """)
+
+    db.insert_contact(name, email, subject, message)
+    db.fetch_all_contacts()  # Just to demonstrate DB interaction
     
     # For now, redirect back to contact section with success message
     # In production, you'd want to add flash messages or return JSON
